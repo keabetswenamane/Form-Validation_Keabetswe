@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/validate.css">
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h1>Task List</h1>
+
+
+<form>
+    <div>
+        <label for="newTask">New task</label>
+        <input type="text" name="newTask" placeholder="2 to 5 tasks" id="newTask" required>
+        
+    </div>
+    
+    <p id="error"></p>
+
+    <br>
+    <br>
+
+    <div>
+        <label> Task Description</label>
+        <textarea name="Description" placeholder="Optional" id="Description" cols="30" rows="10"></textarea>
+    </div>
+    
+    <br>
+    <br>
+
+    <div>
+        <label>Set Task Due Date</label>
+        <input type="date" name="date" id="date" required>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <label>Set Task Due Time</label>
+        <input type="time" name="time" id="time" required>
+    </div>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<ul id="task">
+  
+    <li>Clean the House</li>
+    <li>Wash Dishes</li>
+    <li>Go Shoping</li>
+  
+    
+</ul>
+
+    <script src="JS\validate.js"></script>
+  
+</body>
+</html>
